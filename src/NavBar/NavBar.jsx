@@ -26,6 +26,11 @@ export const NavBar = () => {
           
         >Motocicletas
         </NavLink>
+
+        <NavLink to='/search' className='navLink'
+          
+        >Buscar
+        </NavLink>
         
         </>
 

@@ -109,7 +109,7 @@ nav .navLink:hover {
     display:flex;
     flex-direction: column;
     margin: 5px auto;
-    background-color: brown;
+    background-color: var(--main-color);
     width: 156px;
     border-radius: 5px;
     overflow: hidden;
@@ -119,11 +119,12 @@ nav .navLink:hover {
 
 .content {
     flex-direction: column;
-    margin-top: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 129px;
+    background-color: rgb(149, 148, 224);
   }
 
   .content > p {
@@ -147,6 +148,11 @@ nav .navLink:hover {
     text-align: center;
 }
 
+.searchForm {
+  width: 200px;
+  margin:var(--box-center)
+}
+
   @media screen and (min-width: 768px) {
 
 
@@ -168,7 +174,7 @@ nav .navLink:hover {
 
     .content {
         position: relative;
-        bottom: -38px;
+        bottom: -46px;
         margin-top: -16;
         
     }

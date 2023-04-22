@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const Card = ({item}) => {
-console.log(item.title)
+
     
   return (
     <>

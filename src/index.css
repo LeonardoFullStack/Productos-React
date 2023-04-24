@@ -32,11 +32,13 @@ h2 {
   }
 
 input[type="submit"] {
-    background-color: rgb(49, 178, 226);
     border: none;
     padding:5px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 5px;
+    color:white;
+  background-color: black;
 }
 
 input[type="submit"]:hover {
@@ -71,7 +73,6 @@ img {
     max-height: 100px;
 
     margin:var(--box-center);
-    margin-bottom: 19px;
     
 }
 
@@ -95,7 +96,7 @@ nav .navLink:hover {
     display:grid;
     grid-template-columns: 1fr;
     background-color: var(--main-color);
-    width: 80%;
+    width: 75%;
     margin: var(--box-center);
     margin-bottom: 20px;
     border-radius: 5px;
@@ -105,26 +106,58 @@ nav .navLink:hover {
     max-width: 270px;
 }
 
+.gridContainerOne {
+  display:grid;
+  grid-template-columns: 1fr;
+  background-color: var(--main-color);
+  width: 75%;
+  margin: var(--box-center);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--text-color);
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.gridSearch {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:10px;
+}
+
+.inputSearch {
+   width:100%
+}
+
+.info {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.gridSearchForm {
+  grid-column:1 / 2 ;
+}
+
 .card {
     display:flex;
     flex-direction: column;
     margin: 5px auto;
-    background-color: var(--main-color);
+    background-color: white;
     width: 156px;
     border-radius: 5px;
     overflow: hidden;
     height: auto;
-    min-height: 212px;
 }
 
 .content {
     flex-direction: column;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 129px;
-    background-color: rgb(149, 148, 224);
+    color:black;
   }
 
   .content > p {
@@ -139,6 +172,34 @@ nav .navLink:hover {
 
   .content > h4 {
     margin-top: 30px;
+  }
+
+  .contentOne {
+    flex-direction: column;
+    border-radius: 5px;
+    display: flex;
+    color:black;
+    text-align: start;
+    font-weight: bolder;
+  }
+
+  .contentOne > p {
+    font-size: 0.5rem;
+    background-color: white;
+    color:var(--main-color);
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+
+  }
+
+  .contentOne > h4 {
+    margin-top: 30px;
+  }
+
+  .itemData {
+    color:lightslategray;
+    margin-right: 10px;
   }
 
 .titleCenter {
@@ -165,11 +226,16 @@ nav .navLink:hover {
 
     .card {
         width: 300px;
-        height: 293px;
+        height: 251px;
     }
 
     .image {
         max-width: 300px;
+    }
+
+    .imageOne {
+      max-height: none;
+      max-width: 300px;
     }
 
     .content {
@@ -187,4 +253,12 @@ nav .navLink:hover {
     img {
         max-height: 153px;
     }
+
+    
+
+    .gridSearch {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    
   }

@@ -8,6 +8,7 @@ import { Home } from '../components/Home'
 import { SmartPhones } from '../components/SmartPhones'
 import { Motorcycles } from '../components/Motorcycles'
 import { Search } from '../components/Search'
+import { ViewOne } from '../components/ViewOne'
 
 
 
@@ -30,6 +31,7 @@ export const Router = () => {
                         <Route path='smartphones' element={<SmartPhones />} />
                         <Route path='motorcycles' element={<Motorcycles />} />
                         <Route path='search' element={<Search />} />
+                        <Route path='viewOne/:id' element={<ViewOne />} />
     
                         
                         <Route path='logout' element={<LogOut />} />

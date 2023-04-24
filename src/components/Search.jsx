@@ -6,29 +6,36 @@ import { SearchData } from './SearchData'
 
 export const Search = () => {
 
-    const {handleChange,search} = useForm()
+  const { handleChange, search } = useForm()
 
-    const [searchData, setSearchData] = useState('TTT')
+  const [searchData, setSearchData] = useState('TTT')
 
-    const handleSubmit = (ev) => {
-        ev.preventDefault();
-        console.log('submit')
-        setSearchData(search)
-    }
-    
-    
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+    console.log('submit')
+    setSearchData(search)
+  }
 
-    
 
-  
+
+
+
+
 
   return (
     <>
-    <Form handleChange={handleChange} handleSubmit={handleSubmit}/>
+      <div className='gridSearch'>
+      <h2>
+        Buscar
+      </h2>
+        <div className='gridSearchForm'>
+        <Form handleChange={handleChange} handleSubmit={handleSubmit} />
+        </div>
 
-    
-        <SearchData searchData={searchData}/>
-   
+
+        <SearchData searchData={searchData} />
+      </div>
+
     </>
   )
 }

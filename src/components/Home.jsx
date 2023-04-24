@@ -25,7 +25,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </NavLink>
-                <NavLink to='/motos' className='navLink'>
+                <NavLink to='/motorcycles' className='navLink'>
                     <div className='card'>
 
                         <div className='image'>

@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Card = ({item}) => {
 
-    
+    const  linkId = `/viewOne/${item.id}`
   return (
     <>
     <div className='card'>
@@ -17,12 +18,15 @@ export const Card = ({item}) => {
     <h5>
         {item.price} €
     </h5>
-    <p>
-        {item.description}
-    </p>
-    <p>
-        {item.brand}
-    </p>
+
+    <NavLink to={linkId} className='navLink' 
+          
+        >
+        <button className='info'>
+            Más info
+        </button>
+        </NavLink>
+
 </div>
 </div>
     </>
